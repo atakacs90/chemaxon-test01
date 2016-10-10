@@ -1,0 +1,15 @@
+apply plugin: 'java'
+jar {
+    manifest {
+	attributes 'Main-Class' : 'crunchify/com/tutorials/CrunchifyFibonacci'
+    }
+}
+
+  repositories {
+          maven { url 'http://repo1.maven.org/maven2' }
+        }
+
+dependencies {
+    testCompile group: 'junit', name: 'junit-dep', version: '4.10'
+}
+
